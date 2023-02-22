@@ -1,0 +1,49 @@
+.info__speed{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: $color-secundario;
+    flex-direction: column;
+    align-items: center;
+
+    &--separador{
+        color: $color-principal;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &--titulo{
+        color: $color-principal;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    &--txt{
+        color: $color-principal;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        text-decoration: dashed; 
+        width: 25%;
+        font-weight: 550;
+        letter-spacing: 0.07em;
+        line-height: 1
+    }
+    
+}
+
+.img__swipe{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.img__swipe--carrousel{
+/*     margin-top: 5px; */
+    width: 100%
+}

@@ -1,0 +1,227 @@
+@import "operators";
+
+/* FOOTER */
+
+footer{
+    width: 100vw;
+    font:100; color: white;
+    background-color: $color-principal;
+    letter-spacing: 1px;
+
+    
+    
+    .footer__gral{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: 1fr;
+
+        .footer__titulonosotros{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding-left: 1vw;
+
+            .footer__titulo--nosotros{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:flex-start;
+                align-items: center;
+                margin: 10px;
+            }
+        }
+        
+        .info__nosotros{
+            display: flex;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            flex-direction: column;
+            margin: 20px 0px 0px 10px;
+            justify-content:left;
+            align-items: left;
+            list-style: none;
+            font-style: bold;
+            color: $color-terciario;
+            font-family: $font-principal;
+            padding: 0px;
+        }
+
+        .redes{
+            padding-right: 2vw;
+
+            .footer__titulo--redes{
+                grid-column: 4/5;
+                grid-row: 1/2;
+                display: flex;
+                margin: 10px;
+                justify-content: flex-end;
+            }
+
+            .icons {
+                grid-column: 4/5;
+                grid-row: 1/2;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                margin: 40px 10px 0px 0px;
+                column-gap: 25px;
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    font-size: 26px;
+                    color: #fff;
+                    border-radius: 50%;
+                    outline: 2px solid $color-secundario;
+                    transition-property:
+                        outline-offset, outline-color,
+                        background-color;
+                    transition-duration: .25s;
+
+                    &:hover {
+                        outline-offset: 4px;
+                        color: white;
+                    }
+                    
+                    &:hover i {
+                        animation: shake .25s;
+                    }  
+                }
+                
+                .icon--instagram:hover {
+                    background-image: radial-gradient(circle at 30% 107%,
+                            #fdf497 0%, #fdf497 5%,
+                            #fd5949 45%, #d6249f 60%,
+                            #285AEB 90%);
+                    outline-color: #a02d76;
+                }
+                
+                .icon--twitter:hover {
+                    background-color: #1da1f2;
+                    outline-color: #1da1f2;
+                }
+                
+                .icon--whatsapp:hover {
+                    background-color: #00b52d;
+                    outline-color: #15e61f;
+                }
+                
+                .icon--github:hover {
+                    background-color: #5f226b;
+                    outline-color: #ab11ca;
+                }
+                
+                @keyframes shake {
+                    10% {
+                        transform: rotate(15deg);
+                    }
+                
+                    20% {
+                        transform: rotate(-15deg);
+                    }
+                
+                    30% {
+                        transform: rotate(15deg);
+                    }
+                
+                    40% {
+                        transform: rotate(-15deg);
+                    }
+                }
+            }
+        }
+
+
+        .ayuda{
+            display: flex;
+            flex-direction: column;
+
+            .footer__tituloayuda{
+                grid-column: 2/3;
+                grid-row: 1/2;
+                display: flex;
+                @include flex(column, center, center);
+                flex-wrap: wrap;
+
+                .footer__titulo--ayuda{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 10px;
+                }
+
+                .footer__titulo--preguntas{
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 0px;
+
+                    .footer__preguntas{
+                        list-style: none;
+                        font-family: $font-principal; color: $color-principal;
+                        text-align: left;
+                        text-align: center;
+                        flex-direction: column;
+                        margin: 1px;
+                        color: white;
+
+                        & a{
+                            font-family: $font-principal; color: $color-principal;
+                            text-align: center;
+                            flex-direction: column;
+                            color: white;
+                            font-size: 15px;
+                        }
+                    }
+                    
+                }
+            }
+
+            .footer__boton{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            
+            
+            
+            .boton__soporte{
+                grid-column: 3/4;
+                grid-row: 1/2;
+                display: flex;
+                width: 150px;
+                height: 30px;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border-radius: 20px;
+                background-color: $color-principal;
+                border: 1px solid $color-secundario;
+                font-family: $font-principal; color: rgb(255, 255, 255);
+                font-size: large;
+
+
+                &:hover{
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                    display: flex;
+                    width: 150px;
+                    height: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    border-radius: 20px;
+                    background-color: rgb(66, 8, 8);
+                    border: 1px solid $color-secundario;
+                    font-family: $font-principal; color: rgb(255, 255, 255);
+                    font-size: large;
+                }
+            }
+        }
+    }    
+}

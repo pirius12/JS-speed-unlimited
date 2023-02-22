@@ -1,0 +1,42 @@
+@import "variables";
+@import "footer";
+@import "header";
+@import "operators";
+@import "main-pages/index";
+@import "main-pages/tienda";
+@import "main-pages/nosotros";
+@import "main-pages/speed-app";
+@import "main-pages/eventos";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+h1{
+    font-family: $font-titulos;
+}
+
+h2{
+    font-family: $font-titulos;
+}
+
+h3{
+    font-family: $font-titulos;
+}
+
+p{
+    font-family: $font-principal;
+}
+
+div{
+    font-size: 1rem;
+}
+
+@import "mediaqueries";

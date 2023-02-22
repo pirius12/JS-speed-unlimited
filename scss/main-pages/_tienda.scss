@@ -1,0 +1,173 @@
+/* TIENDA */
+
+.main__tienda{
+    display: flex;
+    background-color: $color-principal;
+    width: 100vw;
+    margin: 0px;
+    @include flex(column, center, center);
+
+    .titulo__productos{
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .productos__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+        margin: 15px;
+        width: 95vw; 
+
+        .main__card{
+            display: flex;
+            @include flex(column, center, center);
+            border: rgb(255, 39, 39) solid 2px;
+            background-color: $color-principal;
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        .productos__img{
+            width: 250px;
+            height: 250px;
+        }
+
+        .producto__texto{
+            color: white;
+            margin: 5px;
+        }
+
+        .boton__tienda{
+            width: 150px;
+            height: 30px;
+            margin: 10px;
+            border: white solid 1px;
+            color: white;
+            font-weight: bold;
+            background-image: linear-gradient(rgb(255, 0, 0), rgb(92, 16, 16));
+            border-radius: 15px;
+
+            & p{
+                font-size:medium ;
+            }
+
+            &:hover{
+                width: 150px;
+                height: 30px;
+                margin: 10px;
+                border: white solid 1px;
+                color: white;
+                font-weight: bold;
+                background-image: linear-gradient(rgb(92, 16, 16), rgb(255, 0, 0));
+                border-radius: 15px;
+            }
+        }
+
+        .card__uno{
+            grid-column: 1/2;
+            grid-row: 1/2;
+
+            &:hover{
+                transform: scale(1.06, 1.06);
+            }
+        }
+        
+        
+        
+        .card__dos{
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+            &:hover{
+                transform: scale(1.06, 1.06);
+            }
+        }
+        
+        
+        
+        .card__tres{
+            grid-column: 3/4;
+            grid-row: 1/2;
+
+            &:hover{
+                transform: scale(1.06, 1.06);
+            }
+        }
+        
+        
+        
+        .card__cuatro{
+            grid-column: 4/5;
+            grid-row: 1/2;
+
+            &:hover{
+                transform: scale(1.06, 1.06);
+            }
+        }
+        
+        
+        
+        .card__cinco{
+            grid-column: 1/2;
+            grid-row: 2/3;
+
+            &:hover{
+                transform: scale(1.06, 1.06);
+            }
+        }
+        
+        
+        
+        .card__seis{
+            grid-column: 2/3;
+            grid-row: 2/3;
+
+           &:hover{
+                transform: scale(1.06, 1.06);
+            }
+        }
+        
+        
+        
+        .card__siete{
+            grid-column: 3/4;
+            grid-row: 2/3;
+
+            &:hover{
+                transform: scale(1.06, 1.06);
+            }
+        }
+        
+        
+        
+        .card__ocho{
+            grid-column: 4/5;
+            grid-row: 2/3;
+
+            &:hover{
+                transform: scale(1.06, 1.06);
+            }
+        }
+    }
+
+    .ss{
+        color: $color-principal;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

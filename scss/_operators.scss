@@ -1,0 +1,43 @@
+/* CONDICIONAL IF */
+
+@if (condicional){
+
+
+}@else{
+
+
+}
+
+$redes:(
+    twitter: #1da1f2,
+    instagram: #a02d76,
+    whatsapp: #15e61f,
+    github: #ab11ca
+);
+
+@each $name, $color in $redes {
+    .color-#{$name} {
+        outline-color: #{$color} ;
+    } 
+}
+
+
+/* EXTEND */
+
+.background-cover{
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.centrar{
+    justify-content: center;
+    align-items: center;
+}
+
+/* mixing */
+
+ @mixin flex($flex-direction, $justify, $align) {
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+ }

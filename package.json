@@ -1,0 +1,25 @@
+{
+  "name": "speed-unlimited",
+  "version": "1.0.0",
+  "description": "<h1>Speed Unlimited- Proyecto</h1>\r <p>Este sitio es un proyecto de prueba para una pagina web de Speed Unlimited, donde se van a poder acercar a la marca segun lo que esten buscando.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirius12/speed-unlimited.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pirius12/speed-unlimited/issues"
+  },
+  "homepage": "https://github.com/pirius12/speed-unlimited#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
